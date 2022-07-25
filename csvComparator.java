@@ -32,10 +32,10 @@ public class csvComparator {
                     Map<String, Integer> second_map = new HashMap<>();
                     //make a hashmap out of the arrays, keeping the index in check. Might need stripping
                     for(int i = 0; i < first_line_criteria.length; i++){
-                        first_map.put(i, first_line_criteria[i]);
+                        first_map.put(first_line_criteria[i], i);
                     }
                     for(int i = 0; i < second_line_criteria.length; i++){
-                        second_map.put(i, second_line_criteria[i]);
+                        second_map.put(first_line_criteria[i], i);
                     }
                     System.out.println("hashmap looks like this: " + Collections.singletonList(first_map));
                     //store the args after pos2 and check if they are the valid comparators.
